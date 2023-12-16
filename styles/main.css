@@ -7,6 +7,11 @@
 
 .hidden {
   display: none !important;
+  opacity: 0;
+}
+
+.display {
+  opacity: 1 !important;
 }
 
 body,
@@ -80,10 +85,24 @@ body {
   border-radius: 1rem;
 }
 
+.hover div h1 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
 .hover div button:hover {
   opacity: 0.6;
   cursor: pointer;
   transform: scale(0.95);
+}
+
+#response .hover div a {
+  color: #2e2f2f;
+}
+
+#response .hover div a:hover {
+  opacity: .6;
+  text-decoration: underline dashed #fe6e6f;
 }
 
 .footer {

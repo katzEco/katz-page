@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body>
-    <div class="container" id="input">
+    <div class="container display" id="input">
       <div class="hover">
         <div>
           <input
@@ -18,15 +18,28 @@
             placeholder="Enter Repository Link"
             required
           />
-          <button type="submit" onclick="creatingLink">Create!</button>
+          <button type="submit" id="link-create">Create!</button>
         </div>
       </div>
     </div>
 
-    <div class="container hidden" id="response"></div>
+    <div class="container hidden" id="response">
+      <div class="hover">
+        <div>
+          <a href="" id="result">
+            <h1 id="result-link"></h1>
+          </a>
+          <button type="submit" id="return">
+            Back to homepage
+          </button>
+        </div>
+      </div>
+    </div>
 
     <div class="footer">
-      &copy; 2023 <a href="https://suphakit.net" target="_blank">Suphakit P.</a> All Right Reserved.
+      &copy; 2023
+      <a href="https://suphakit.net" target="_blank">Suphakit P.</a> All Right
+      Reserved.
     </div>
 
     <script src="./scripts/submit.js"></script>
